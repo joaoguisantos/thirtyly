@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thirtyly · Painel</title>
+    <link rel="stylesheet" href="painel.css" />
+    <script src="painel.js" defer></script>
+  </head>
+  <body>
+    <div class="app">
+      <aside class="lado">
+        <div class="marca">
+          <i>🎯</i><b>thirty<span>ly</span></b>
+        </div>
+        <nav id="nav">
+          <button data-v="painel" class="on">🏠 <span>Minhas metas</span></button>
+          <button data-v="perfil">👤 <span>Meu perfil</span></button>
+          <button data-v="criar">➕ <span>Nova meta</span></button>
+          <button data-v="descobrir">🧭 <span>Descobrir</span></button>
+          <button data-v="missoes">🃏 <span>Missões</span></button>
+          <button data-v="calendario">📅 <span>Calendário</span></button>
+          <button data-v="trofeus">🏆 <span>Troféus</span></button>
+          <button data-v="ranking">📈 <span>Ranking global</span></button>
+          <button data-v="cemiterio">🪦 <span>Cemitério</span></button>
+          <button data-v="regras">📜 <span>Regras</span></button>
+          <button data-sair="1">🚪 <span>Sair</span></button>
+        </nav>
+        <div class="eu lk" data-pf="Você">
+          <div class="av" id="inicial_usuario"></div>
+          <div>
+            <b id="nome_usuario"></b><small>Nível <span id="n2">7</span></small>
+          </div>
+        </div>
+      </aside>
+      <div class="mainc">
+        <header class="topo">
+          <span class="nivel" id="nv">Nível 7</span>
+          <div class="xp">
+            <p><span id="xpt">640 / 1000 XP</span><span>próximo nível</span></p>
+            <div class="barra"><div id="xpb"></div></div>
+          </div>
+          <span class="fogo">🔥 <span id="sq">12</span> dias seguidos</span>
+        </header>
+        <main id="v"></main>
+      </div>
+    </div>
+    <div class="barra_inferior">
+      <div><span class="pt"></span>📡 <b>1.284</b> check-ins nas últimas 2 horas</div>
+      <div>🔥 <b>312</b> sequências ativas hoje</div>
+      <div>🏆 <b>96</b> metas concluídas essa semana</div>
+    </div>
+    <div class="fundo" id="fm"><div class="modal" id="mo"></div></div>
+    <div class="aviso" id="av"></div>
+  </body>
+</html>

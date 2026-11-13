@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thirtyly</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="principal">
+    <div class="esquerda">
+      <div class="marca">
+        <span class="icone_marca">🎯</span>
+        <h1>thirty<span>ly</span></h1>
+      </div>
+      <p class="descricao">Metas que ganham vida quando alguém olha junto com você. Crie uma meta de 7 a 90 dias e cumpra em grupo.</p>
+
+      <ul class="lista_detalhes">
+        <li><span class="icone">✅</span>Checklist diária com prova em foto, vídeo ou áudio</li>
+        <li><span class="icone">💬</span>Chat de grupo pra se cobrarem juntos</li>
+        <li><span class="icone">🏆</span>XP, níveis, troféus e ranking</li>
+      </ul>
+
+      <div class="card_flutuante card_1">
+        <p class="card_nome">Saúde · dia 14/30</p>
+        <p class="card_titulo">2,5L de água por dia</p>
+        <div class="barra_progresso">
+          <div class="progresso progresso_1"></div>
+        </div>
+      </div>
+
+      <div class="card_flutuante card_2">
+        <p class="card_nome">Fitness · dia 6/21</p>
+        <p class="card_titulo">Treino de 20 min</p>
+        <div class="barra_progresso">
+          <div class="progresso progresso_2"></div>
+        </div>
+      </div>
+
+      <div class="card_flutuante card_3">
+        <p class="card_nome">Estudo · dia 20/30</p>
+        <p class="card_titulo">30 min de inglês</p>
+        <div class="barra_progresso">
+          <div class="progresso progresso_3"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="direita">
+      <span class="selo_topo">Passo 1 de vários 🎯</span>
+
+      <div class="abas">
+        <button class="aba ativa" id="aba_entrar" data-aba="entrar" type="button">Entrar</button>
+        <button class="aba" id="aba_criar" data-aba="criar" type="button">Criar conta</button>
+      </div>
+
+      <div class="titulo_login">
+        <h2 id="titulo_formulario">Bem-vinda de volta</h2>
+        <p id="subtitulo_formulario">Entre pra ver o progresso das suas metas</p>
+      </div>
+
+      <form id="formulario_login" novalidate>
+        <div class="campo campo_nome" id="campo_nome">
+          <label for="nome_login">Usuário</label>
+          <input id="nome_login" placeholder="Escolha um nome de usuário" type="text" maxlength="20" autocomplete="username">
+        </div>
+        <div class="campo">
+          <label for="email_login">E-mail</label>
+          <input id="email_login" placeholder="nome@email.com" type="email" autocomplete="email">
+        </div>
+        <div class="campo campo_nome" id="campo_codigo">
+          <label for="codigo_login">Código recebido por e-mail</label>
+          <input id="codigo_login" placeholder="6 dígitos" type="text" inputmode="numeric" maxlength="6" autocomplete="one-time-code">
+        </div>
+        <div class="campo" id="campo_senha">
+          <label for="senha_login" id="rotulo_senha">Senha</label>
+          <div class="campo_senha">
+            <input id="senha_login" placeholder="••••••••" type="password" autocomplete="current-password">
+            <button class="botao_ver" type="button" data-alvo="senha_login" aria-label="Mostrar senha">👁️</button>
+          </div>
+        </div>
+        <div class="campo campo_nome" id="campo_confirmar">
+          <label for="confirmar_login" id="rotulo_confirmar">Confirmar senha</label>
+          <div class="campo_senha">
+            <input id="confirmar_login" placeholder="Repita a senha" type="password" autocomplete="new-password">
+            <button class="botao_ver" type="button" data-alvo="confirmar_login" aria-label="Mostrar senha">👁️</button>
+          </div>
+        </div>
+        <p class="erro_form" id="erro_form" role="alert"></p>
+        <button class="botao_esqueci botao_reenviar" id="botao_reenviar" type="button">Não recebeu? Enviar outro código</button>
+      </form>
+
+      <div class="botao_login">
+        <button class="botao_esqueci" id="botao_esqueci" type="button">Esqueci minha senha</button>
+        <button class="botao_principal" id="botao_principal" type="submit" form="formulario_login">Entrar →</button>
+      </div>
+
+      <div class="entrecom_login">
+        <p>Ou continue com</p>
+        <div class="botoes_sociais">
+          <button type="button" data-aviso="Login com Google">🔵 Google</button>
+          <button type="button" data-aviso="Login com Apple">🍎 Apple</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="barra_inferior">
+    <div class="estatistica"><span class="ponto"></span><span>📡 <b>1.284</b> check-ins nas últimas 2 horas</span></div>
+    <div class="estatistica">🔥 <b>312</b> sequências ativas hoje</div>
+    <div class="estatistica">🏆 <b>96</b> metas concluídas essa semana</div>
+  </div>
+
+  <div class="aviso" id="aviso"></div>
+</body>
+</html>
